@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Form </title>
+        <style>
+            h3{
+                color:red;
+                font-family: 'Arial', sans-serif;
+            }
+        </style>
+    </head>
+    <body style="background-color: pink;">
+        <center>
+            <form action="\submit.php" method="post">
+                <h3>Personal Details</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+                <label for="email">Email id:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br><br>
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required>
+                <br><br>
+                <h3>Educational Qualifications</h3>
+                <label for="degree">Degree:</label>
+                <select id="degree" name="degree"  required>
+                    <option value="bachelor">Bachelor's</option>
+                    <option value="master">Master's</option>
+                    <option value="phd">PhD</option>
+                </select>
+                <br><br>
+                <label for="branch">Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="cse">Computer Science</option>
+                    <option value="ece">Electronics</option>
+                    <option value="mech">Mechanical</option>
+                    <option value="civil">Civil</option>
+                    <option value="eee">Electrical</option>
+                    <option value="it">Information Technology</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                <label for="hobbies">Hobbies:</label>
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                <label for="traveling">Traveling</label>
+                <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                <label for="gaming">Gaming</label>
+                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                <label for="sports">Sports</label>
+                <br><br>
+                <h3>Address</h3>
+                <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address here..." required></textarea>
+                <br><br>
+                <label for="resume">Attach Resume:</label>
+                <input type="file" id="resume" name="resume" required>
+                <br><br>
+
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                <button type="button" onclick="alert('Submitted Successfully!!')">Click me</button>
+
+        </center>
+      
+    </body>
+</html>

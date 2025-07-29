@@ -23,6 +23,40 @@
             td{
                 background-color: rgb(183, 158, 205);
             }
+            #MyHeader{
+                background-color: lightblue;
+                color: black;
+                padding: 40px;
+                text-align: center;
+            }
+            #myHeader{
+                background-color: pink;
+                color: blue;
+                padding: 40px;
+                text-align: center;
+
+            }
+            .city{
+                background-color: tomato;
+                color:white;
+                border: 2px solid black;
+                margin: 20px;
+                padding: 20px;
+            }
+            .note{
+                font-size: 120%;
+                color: yellow;
+            }
+            .para{
+                font-weight: bold;
+                color:brown;
+                font-size: 160%;
+            }
+            .head2{
+                font-size: 200%;
+                color:green;
+            }
+
 
         </style>
     </head>
@@ -184,14 +218,193 @@
     </table>
 
      <!--Html padding & margin-->
-     
 
-    
+     <!--HTML lists-->
+     <h4>Unordered list</h4>
+     <ul style="list-style-type: square; list-style-position:inside";>
+     <li>html</li>
+     <li>css</li>
+     <li>javascript</li>
+     <li>bootstrap</li>
+     <li>React JS</li>
+     <li>Node.js</li>
+     <li>Python</li>
+     <li>MySQL</li>
+     </ul>
 
-    
+     <br>
+     <h4>Ordered list</h4>
+     <ol>
+     <li>html</li>
+     <li>css</li>
+     <li>javascript</li>
+     <li>bootstrap</li>
+     <li>React JS</li>
+     <li>Node.js</li>
+     <li>Python</li>
+     <li>MySQL</li>
+     </ol>
+     <h4>Nested lists</h4>
+     <ol type="A";>
+        <li>Frontend</li>
+        <ol>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+        </ol>
+        <li>Backend</li>
+        <ol>
+            <li>Node.js</li>
+            <li>Python</li>
+        </ol>
+        <li>Database</li>
+        <ol>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+        </ol>
+     </ol>
+     <h4>List using start attribute</h4>
+     <ol start="100">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+     </ol>
+     <h4>Description list</h4>
+     <dl>
+        <dt>Html</dt>
+        <dd>-HyperText Markup Language used to structure the web pages</dd>
+        <dt>Css</dt>
+        <dd>-Cascading Style Sheets used for styling</dd>
+        <dt>Javascript</dt>
+        <dd>-used for client side scripting</dd>
+     </dl>
 
+     <!--Block level elements-->
+     <!-- <address> , <pre> , <blockquote> , <header> , <footer> -->
+     <!--Inline elements-->
+     <!-- <a> , <img> , <abbr> , <br> , <span> -->
     
-    
+    <!--Div element-->
+    <div style="background-color: black;color:white;padding: 50px;">
+        <h1>Div element</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro nulla aliquam illo 
+            sint assumenda error commodi ut rerum eveniet! Saepe laboriosam vel corrupti vitae blanditiis ab illum. Nihil voluptatibus at saepe,
+             porro praesentium explicabo sint numquam, harum quia provident ullam optio accusamus non, in inventore commodi nostrum vel voluptatem?</p>
+    </div>
+
+    <!--id attribute-->
+    <h2>The id attribute</h2>
+    <p>Use CSS to style the element with the id "MyHeader"</p>
+    <h1 id="MyHeader">This is a header</h1>
+    <h1 id="MyHeader">This is another header</h1>
+
+    <!--Class attribute-->
+    <div class="city">
+        <h2 class="heads">London</h2>
+        <p>London is the capital of England</p>
+    </div>
+    <div class="city">
+        <h2 class="heads">Paris</h2>
+        <p>Paris is the capital of France</p>
+    </div>
+    <div class="city">
+        <h2 class="heads">Tokyo</h2>
+        <p>Tokyo is the capital of Japan</p>
+    </div>
+
+    <h2>My <span class="note">Important</span> heading</h2>
+    <p>this is an <span class="para">important</span> paragraph</p>
+    <h3>my <span class="head2">great</span> heading</h3>
+
+    <!--Html forms-->
+    <h2>HTML Forms</h2>
+    <form action="/action_page.php" target="_blank" method="post" autocomplete="on" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name" style="width: 500px;" required> <br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name"style="width:500px;"> <br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" style="width:500px;"> <br>
+
+        <h5>Choose your year:</h5>
+        <input type="radio" id="1st year" name="year" value="1st year">
+        <label for="1st year">1st year</label><br>
+        <input type="radio" id="2nd year" name="year" value="2nd year">
+        <label for="2nd year">2nd year</label><br>
+        <input type="radio" id="3rd year" name="year" value="3rd year">
+        <label for="3rd year">3rd year</label><br>
+        <input type="radio" id="4th year" name="year" value="4th year">
+        <label for="4th year">4th year</label><br>
+        <h5>Select your favourite language:</h5>
+        <input type="checkbox" id="java" name="fav_lang" value="java">
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="C" name="fav_lang" value="C">
+        <label for="C">C</label><br>
+        <input type="checkbox" id="Python" name="fav_lang" value="Python">
+        <label for="Python">Python</label><br>
+        <textarea name="about" style="width: 900px;height: 300px;" placeholder="Tell about yourself here"></textarea><br>
+        <label for="datemax">Enter a date before 2025-07-15</label><br>
+        <input type="date" id="datemax" name="datemax" max="2025-07-14"><br><br>
+        <label for="datemin">Enter a date after 2025-04-10</label><br>
+        <input type="date" id="datemin" name="datemin" min="2025-04-11"><br><br>
+        <label for="age">Enter your age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="40"><br>
+        <label for="pin">PIN CODE</label><br>
+        <input type="text" id="pin" name="id" maxlength="6"><br><br>
+
+        <label for="files">Upload files:</label><br>
+        <input type="file" id="files" name="files" multiple><br><br>
+        
+        <label for="country">Enter your country code:</label><br>
+        <input type="text" id="country" name="country" placeholder="Ex:IXE-01" pattern="[A-Z]{3}-[0-9]{2}"><br><br>
+        <label for="sem">Choose your sem:</label><br>
+        <select id="sem" name="sem" size="3" multiple>
+            <option value="1">1st sem</option>
+            <option value="2">2nd sem</option>
+            <option value="3" selected>3rd sem</option>
+            <option value="4">4th sem</option>
+        </select>
+        <br><br>
+        <button type="button" onclick="alert('Hi everyone!!')">Click me</button>
+        <br><br>
+        <fieldset>
+            <legend> Hobbies & interests:</legend>
+            <h5>Choose your hobbies:</h5>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="swimming" name="hobbies" value="swimming">
+            <label for="swimming">swimming</label><br>
+            <input type="checkbox" id="dancing" name="hobbies" value="dancing">
+            <label for="dancing">Dancing</label><br><br>
+            <label for="interests"> Enter your Interests:</label> <br>
+            <input type="text" id="interests" name="interests">
+        </fieldset><br><br>
+
+        <h5>Select your favourite colour:</h5>
+        <input list="favcol" name="favcol">
+        <datalist id="favcol">
+            <option value="red"></option>
+            <option value="pink"></option>
+            <option value="blue"></option>
+            <option value="green"></option>
+        </datalist><br><br>
+        
+            0 <input type="range" id="a" name="a" value="50">
+            100 + 
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+    <form>
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search here...">
+        <input type="submit" value="Search">
+    </form>
+
 
     <footer><center>My html page built with ❤️</center></footer>
     </body>
