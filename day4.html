@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function myFunction() {
+            document.getElementById("demo4").innerHTML = "Hello JavaScript in Head!";
+        }
+    </script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <body>
+        <h2>What can javascript do?</h2>
+        <p id="demo">JavaScript can be used to create interactive web pages, control multimedia, animate images, and much more.
+             It allows developers to implement complex features on web pages.</p>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'JavaScript is versatile and can be used for both client-side and server-side development.'">
+            Click me to change the text</button>
+
+        <br>
+        
+    <h2>Bulb Example</h2>
+    <button onclick="document.getElementById('bulb').src='pic_bulbon.gif'">Turn On Bulb</button>
+    <img id="bulb" src="pic_bulboff.gif" alt="Bulb Image" style="width:100px;height:100px;">    
+    <button onclick="document.getElementById('bulb').src='pic_bulboff.gif'">Turn Off Bulb</button>
+    <br><br>
+
+    <p id="demo2">Click the button to change the style of this paragraph.</p>
+    <button onclick="document.getElementById('demo2').style.fontSize = '25px'">Change Style</button>
+    <br><br>
+
+
+
+    <h2>JavaScript in body</h2>
+    <p id="demo3"></p>
+    <script>
+        document.getElementById("demo3").innerHTML = "My first JavaScript Paragraph.";
+    </script>  
+
+    <h2>JavaScript in head</h2>
+    <p id="demo4">Hey JavaScript in head</p>
+    <button type="button" onclick="myFunction()">Change Text in Head</button>
+    <br>
+
+    <h2>JavaScript in external file</h2>
+    <p id="demo5">hey im using external javascript file.</p>
+    <button type="button" onclick="myFunction1()">Change Text</button>
+    <script src="javascript.js"></script>
+    <br><br>
+
+    <h2>JavaScript Statements</h2>
+    <p id="demo6"></p>
+    <p>JavaScript statements are executed line by line seperated by semicolon.</p>
+    <script>
+        let a=5;
+        let b=10;
+        let c=a+b;
+        document.getElementById("demo6").innerHTML = "The sum of " + a + " and " + b + " is " + c + ".";
+    </script>
+
+    <button type="button" onclick="myfunction2()">Click Me</button>
+    <p id="demo7"></p>
+    <p id="demo8" style="color:blue;"></p>
+    <script>
+        function myfunction2() {
+            document.getElementById("demo7").innerHTML="hello world";
+            document.getElementById("demo8").innerHTML="hello world in blue";
+        }
+    </script>
+
+    <h2>Javascript DataTypes</h2>
+    <p>When adding a number and string together, JavaScript will convert the number to a string.</p>
+    <p id="demo9"></p>
+    <script>
+        let x=5+"John";
+        document.getElementById("demo9").innerHTML = x;
+    </script>
+    <hr>
+    <h2>Javascript Datatypes</h2>
+    <p id="demo10"></p>
+    <script>
+        let y="2"+"2";
+        document.getElementById("demo10").innerHTML=y;
+    </script>
+    <hr>
+    <h2>JavaScript Functions</h2>
+    <p>Function is defined and called within the <strong>script</strong> tags.</p>
+    <p id="demo11"></p>
+    <script>
+        function myFunction3(p1,p2) {
+            return p1*p2;
+        }
+        document.getElementById("demo11").innerHTML=myFunction3(4,3);
+    </script>
+    <hr>
+
+    <h2>JS Events</h2>
+    <button type="button" onclick="datefunction()" class="btn btn-warning">Click here to see the date & time</button>
+    <p id="demo12"></p>
+    <script>
+        function datefunction() {
+            document.getElementById("demo12").innerHTML = Date();
+        }
+    </script>
+    <hr>
+    <h2>JS Events</h2>
+    <button type="button" onclick="alert('Hello!')">Click me</button>
+    <p>Click the button to trigger an alert box.</p>
+    <hr>
+    
+    </body>
+</html>
